@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ECommerceDemoModelStoreContainer" CdmEntityContainer="ECommerceDemoEntities">
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="ECommerceDemoModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ProdCatId" ColumnName="ProdCatId" />
+          <ScalarProperty Name="ProdName" ColumnName="ProdName" />
+          <ScalarProperty Name="ProdDescription" ColumnName="ProdDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductAttributeLookups">
+      <EntityTypeMapping TypeName="ECommerceDemoModel.ProductAttributeLookup">
+        <MappingFragment StoreEntitySet="ProductAttributeLookup">
+          <ScalarProperty Name="AttributeId" ColumnName="AttributeId" />
+          <ScalarProperty Name="ProdCatId" ColumnName="ProdCatId" />
+          <ScalarProperty Name="AttributeName" ColumnName="AttributeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductCategories">
+      <EntityTypeMapping TypeName="ECommerceDemoModel.ProductCategory">
+        <MappingFragment StoreEntitySet="ProductCategory">
+          <ScalarProperty Name="ProdCatId" ColumnName="ProdCatId" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductAttributes">
+      <EntityTypeMapping TypeName="ECommerceDemoModel.ProductAttribute">
+        <MappingFragment StoreEntitySet="ProductAttribute">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="AttributeId" ColumnName="AttributeId" />
+          <ScalarProperty Name="AttributeValue" ColumnName="AttributeValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
